@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Data Table</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-row">
+            <h1>Most Active Users</h1>
+            <button id="theme-toggle">Dark Mode</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name <i class="fas fa-sort"></i></th>
+                        <th onclick="sortTable(1)">Email <i class="fas fa-sort"></i></th>
+                        <th onclick="sortTable(2)">Username <i class="fas fa-sort"></i></th>
+                        <th onclick="sortTable(3)">Country <i class="fas fa-sort"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            <button onclick="prevPage()"><i class="fas fa-chevron-left"></i></button>
+            <span id="pageNumber">1</span>
+            <button onclick="nextPage()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
